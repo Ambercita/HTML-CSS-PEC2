@@ -221,8 +221,8 @@ dd {
 .content footer {
   background-color: #070e58;
   color: white;
-  margin-top: 4em;
-  padding: 1.5em 4em;
+  margin-top: 4rem;
+  padding: 1.5rem 4rem;
   width: 100%;
 }
 
@@ -287,4 +287,26 @@ td > a {
 
 td > a:hover{
   border-bottom: #a4f479 1px solid;
+}
+
+
+/* ESTILOS DEL FORMULARIO */
+
+form {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+*[aria-label="required"] {
+    color: red;
+}
+
+:required:invalid {
+    border: 1px solid red;
+}
+
+:required:valid {
+    border: 1px solid green;
 }
