@@ -241,3 +241,8 @@ dd {
 .container {
   margin-left: 10vw;
 }
+
+td > a {
+  color: #5865F2;
+}
+
