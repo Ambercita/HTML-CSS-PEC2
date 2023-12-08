@@ -82,9 +82,64 @@
                                 <input type="radio" id="paypal" name="paymentMethod" value="paypal" />
                                 Paypal
                             </label>
+                            <label for="creditCard"> <input type="radio" id="creditCard" name="paymentMethod"
+                                    value="creditCard" />
+                                Tarjeta de crédito</label>
+                        </li>
+                        <li>
+                            <label for="bizum"> <input type="radio" id="bizum" name="paymentMethod" value="bizum" />
+                                Bizum</label>
                         </li>
                     </ul>
                 </fieldset>
+                <fieldset>
+                    <legend>Información de Tarjeta</legend>
+                    <p>
+                        <label for="cardNumber">Número de tarjeta de crédito/débito:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}">
+                    </p>
+                    <p>
+                        <label for="cardDate">Fecha de expiración:</label>
+                        <input type="date" id="cardDate" name="cardDate">
+                    </p>
+                    <p>
+                        <label for="cvc">CVC:</label>
+                        <input type="text" id="cvc" name="cvc" pattern="[0-9]{3}">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dirección de envío:</legend>
+                    <p>
+                        <label for="address">Dirección: <strong><span aria-label="required">*</span></strong></label>
+                        <input type="text" id="address" name="address">
+                    </p>
+                    <p>
+                        <label for="city">Población: <strong><span aria-label="required">*</span></strong></label>
+                        <input type="text" id="city" name="city">
+                    </p>
+                    <p>
+                        <label for="postalCode">Código postal: <strong><span
+                                    aria-label="required">*</span></strong></label>
+                        <input type="text" id="postalCode" name="postalCode">
+                    </p>
+                    <p>
+                        <label for="country">País:</label>
+                        <select id="country" name="country">
+                          <option value="ES">España</option>
+                          <option value="FR">Francia</option>
+                          <option value="CH">China</option>
+                          <!-- y más -->
+                        </select>
+                      </p>
+                </fieldset>
+                <fieldset>
+                      <p>
+                        <label for="comments">Comentarios:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                      </p>
+                </fieldset>
+                <input type="checkbox" required>He leído y acepto los <a href="">términos y condiciones</a> y la <a href="">política de privacidad</a></input>
+                <button>Comprar entrada</button>
             </form>
 
         </section>

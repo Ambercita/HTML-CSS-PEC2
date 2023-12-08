@@ -292,13 +292,6 @@ td > a:hover{
 
 /* ESTILOS DEL FORMULARIO */
 
-form {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    width: 70vw;
-}
-
 *[aria-label="required"] {
     color: red;
 }
@@ -310,3 +303,8 @@ form {
 :required:valid {
     border: 1px solid green;
 }
+
+legend + ul li {
+    list-style: none;
+    font-weight: 400;
+  }
