@@ -163,15 +163,17 @@ a[href="https://www.midjourney.com/home"]
 .content h1{
     text-align: center;
     font-weight: 900;
+    font-size: 2rem;
     text-shadow: 0.5px 0.5px #4b4b4b9f;
 }
 .content h1 + p {
-    text-align: justify;
-    padding: 0 28vw;
+    text-align: left;
+    padding: 0 27.8vw;
     margin-bottom: 2rem;
 }
 .content h2{
     text-align: center;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -191,13 +193,21 @@ iframe + p {
         font-size: smaller;
 }
 
+h2 + p {
+    text-align: left;
+    padding: 0 17vw;
+    margin-bottom: 1.5rem;
+}
+
 dl {
-    margin-left: 4rem;
+    width: 60vw;
+    margin: auto;
+
 }
 
 dt {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
 }
@@ -209,19 +219,23 @@ dd {
 
 .content footer {
     background-color: #070e58;
-    margin-top: 3rem;
     color: white;
+    margin-top: 4em;
+    padding: 1.5em 4em;
+    width: 100%;
   }
 
 .content footer p {
     display: inline-flex;
-    margin-top: 1rem;
-    margin-bottom: auto;
-    gap: 0.5rem;
-    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
   }
 
   .copyright {
     display: block !important;
-    padding-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    margin-left: 10vw;
 }
