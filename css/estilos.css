@@ -242,7 +242,49 @@ dd {
   margin-left: 10vw;
 }
 
-td > a {
-  color: #5865F2;
+table {
+  width: 65vw;
+  margin: 2rem auto 1rem auto;
+  border-top: #5865f2 1px solid;
+  border-bottom: #5865f2 1px solid;
+  border-collapse: collapse;
+  margin-bottom: 0;
 }
 
+caption {
+  border-top: #5865f2 1px solid;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.8rem;
+}
+
+table th {
+    border-bottom: #5865f2 1px solid;
+    padding-bottom: 0.3rem;
+}
+
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 0.3rem;
+  padding-right: 1.2rem;
+  padding-bottom: 0.3rem;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #a4f479;
+}
+
+tfoot {
+  font-size: 0.7rem;
+}
+
+td > a {
+  color: #5865f2;
+  border-bottom: #5865f2 1px dotted;
+}
+
+td > a:hover{
+  border-bottom: #a4f479 1px solid;
+}
