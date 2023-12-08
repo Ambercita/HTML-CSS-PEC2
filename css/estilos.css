@@ -292,6 +292,59 @@ td > a:hover{
 
 /* ESTILOS DEL FORMULARIO */
 
+form {
+    width: 50vw;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    background-color: #5865f230;
+}
+
+
+legend {
+    font-weight: 400;
+}
+
+p > input, p > select{
+    box-sizing: border-box;
+    height: 2rem;
+    border: 0.07rem solid lightgray;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+fieldset > p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+::placeholder, input[type="date"], p > select {
+    padding-left: 0.5rem;
+}
+
+legend + ul {
+    padding-left: 0;
+}
+
+fieldset > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+}
+
+
 *[aria-label="required"] {
     color: red;
 }
@@ -308,3 +361,49 @@ legend + ul li {
     list-style: none;
     font-weight: 400;
   }
+
+p > label {
+    padding-bottom: 0.3rem;
+}
+
+label[for="comments"]{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 4rem;
+    border: 0.07rem solid lightgray;
+    margin-top: 0.4rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+label[for="terms"]{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+input + a, input ~ a {
+    color: #5865f2;
+    border-bottom: #5865f2 1px dotted;
+}
+
+input + a:hover, input ~ a:hover{
+    border-bottom: #a4f479 1px solid;
+}
+
+button {
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 50vw;
+}
