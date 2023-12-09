@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Compra tus entradas hoy mismo para ser parte del Amped Festival.">
-    <title>Compra tus entradas - Amped Festival</title>
+    <title>Amped Festival | Compra tus entradas</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body class="content">
     <header>
         <nav>
-            <a href="index.html"><img src="img/logo.svg" alt="Logo Amped Festival"></a>
+            <a href="index.html"><img src="img/logo.svg" alt="Logo Amped Festival" width="160" height="62"></a>
             <ul>
                 <li><a href="info.html">información</a></li>
                 <li><a href="calendario.html">calendario</a></li>
@@ -35,18 +35,20 @@
                 <fieldset>
                     <legend>Información personal</legend>
                     <p>
-                        <label for="name">Nombre: <strong><span aria-label="required" role="tooltip">*</span></strong></label>
-                        <input type="text" id="name" name="name" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ' - ]+" minlength="3" maxlength="128"
-                            placeholder="Nombre" required>
+                        <label for="name">Nombre: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
+                        <input type="text" id="name" name="name" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ' - ]+" minlength="3"
+                            maxlength="128" placeholder="Nombre" required>
                     </p>
                     <p>
-                        <label for="surname">Apellidos: <strong><span aria-label="required" role="tooltip">*</span></strong></label>
+                        <label for="surname">Apellidos: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
                         <input type="text" id="surname" name="surname" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ' - ]+" minlength="3"
                             maxlength="128" placeholder="Apellido" required>
                     </p>
                     <p>
-                        <label for="email">Correo electrónico: <strong><span
-                                    aria-label="required" role="tooltip">*</span></strong></label>
+                        <label for="email">Correo electrónico: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
                         <input type="email" id="email" name="email" placeholder="E-mail" required>
                     </p>
                     <p>
@@ -54,8 +56,8 @@
                         <input type="tel" id="phone" name="phone" placeholder="Teléfono de contacto">
                     </p>
                     <p>
-                        <label for="birthday">Fecha de nacimiento: <strong><span
-                                    aria-label="required" role="tooltip">*</span></strong></label>
+                        <label for="birthday">Fecha de nacimiento: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
                         <input type="date" id="birthday" name="birthday" required>
                     </p>
                 </fieldset>
@@ -69,7 +71,8 @@
                         <label for="ticket">Selecciona tu Entrada:</label>
                         <select id="ticket" name="ticket">
                             <option value="general">Entrada General - 50€</option>
-                            <option value="vip">Entrada VIP - 150€ (incluye acceso backstage y zona preferencial)</option>
+                            <option value="vip">Entrada VIP - 150€ (incluye acceso backstage y zona preferencial)
+                            </option>
                             <option value="pase">Pase de dos Días - 120€</option>
                         </select>
                 </fieldset>
@@ -86,7 +89,8 @@
                                     value="creditCard">Tarjeta de crédito</label>
                         </li>
                         <li>
-                            <label for="bizum"> <input type="radio" id="bizum" name="paymentMethod" value="bizum">Bizum</label>
+                            <label for="bizum"> <input type="radio" id="bizum" name="paymentMethod"
+                                    value="bizum">Bizum</label>
                         </li>
                     </ul>
                 </fieldset>
@@ -94,7 +98,8 @@
                     <legend>Información de Tarjeta</legend>
                     <p>
                         <label for="cardNumber">Número de tarjeta de crédito/débito:</label>
-                        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" placeholder="1234123412341234">
+                        <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}"
+                            placeholder="1234123412341234">
                     </p>
                     <p>
                         <label for="cardDate">Fecha de Expiración:</label>
@@ -108,17 +113,19 @@
                 <fieldset>
                     <legend>Dirección de Envío:</legend>
                     <p>
-                        <label for="address">Dirección: <strong><span aria-label="required" role="tooltip">*</span></strong></label>
-                        <input type="text" id="address" name="address" placeholder="Dirección">
+                        <label for="address">Dirección: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
+                        <input type="text" id="address" name="address" placeholder="Dirección" required>
                     </p>
                     <p>
-                        <label for="city">Población: <strong><span aria-label="required" role="tooltip">*</span></strong></label>
-                        <input type="text" id="city" name="city" placeholder="Población">
+                        <label for="city">Población: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
+                        <input type="text" id="city" name="city" placeholder="Población" required>
                     </p>
                     <p>
-                        <label for="zip">Código postal: <strong><span
-                                    aria-label="required" role="tooltip">*</span></strong></label>
-                        <input type="text" id="zip" name="zip" placeholder="C. Postal">
+                        <label for="zip">Código postal: <strong><span aria-label="required"
+                                    role="tooltip">*</span></strong></label>
+                        <input type="text" id="zip" name="zip" placeholder="C. Postal" required>
                     </p>
                     <p>
                         <label for="country">País:</label>
@@ -135,8 +142,8 @@
                     <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
                 </p>
                 <label for="terms">
-                    <input type="checkbox" id="terms" required> He leído y acepto los <a href="">términos y condiciones</a> y la <a
-                        href="">política de privacidad</a>
+                    <input type="checkbox" id="terms" required> He leído y acepto los <a href="">términos y
+                        condiciones</a> y la <a href="">política de privacidad</a>
                 </label>
                 <button type="submit">Comprar entrada</button>
             </form>

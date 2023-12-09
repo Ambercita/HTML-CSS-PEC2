@@ -37,13 +37,14 @@ body.home {
   background-repeat: no-repeat;
   background-position: center 50%;
   max-height: 100vh;
+  height: 100vh;
   max-width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .home header img {
-  max-width: 100%;
-  width: 25rem;
   max-width: 75vw;
   display: block;
   margin: auto;
@@ -57,10 +58,6 @@ body.home {
   margin: 2rem auto;
   text-align: center;
   text-shadow: 1px 2px 1px #4b4b4b9f;
-}
-
-.home main {
-  margin-bottom: 2rem;
 }
 
 .home nav {
@@ -99,7 +96,7 @@ body.home {
 }
 
 .home footer {
-  padding-top: 1rem;
+  margin-top: auto;
 }
 
 .home footer p {
@@ -127,8 +124,6 @@ a[href="https://www.midjourney.com/home"]
 }
 
 .content header img {
-  max-width: 100%;
-  width: 10rem;
   max-width: 60vw;
   display: block;
   margin: auto;
@@ -166,11 +161,13 @@ a[href="https://www.midjourney.com/home"]
   font-size: 2rem;
   text-shadow: 0.5px 0.5px #4b4b4b9f;
 }
+
 .content h1 + p {
   text-align: left;
   padding: 0 27.8vw;
   margin-bottom: 2rem;
 }
+
 .content h2 {
   text-align: center;
   font-size: 1.7rem;
@@ -211,6 +208,7 @@ dt {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
+
 dd {
   padding: 0 1.5rem;
   border-left: 2px solid #5865f2;
@@ -222,8 +220,7 @@ dd {
   background-color: #070e58;
   color: white;
   margin-top: 4rem;
-  padding: 1.5rem 4rem;
-  width: 100%;
+  padding: 1.5rem 0 1.5rem 4rem;
 }
 
 .content footer p {
@@ -259,8 +256,8 @@ caption {
 }
 
 table th {
-    border-bottom: #5865f2 1px solid;
-    padding-bottom: 0.3rem;
+  border-bottom: #5865f2 1px solid;
+  padding-bottom: 0.3rem;
 }
 
 table th,
@@ -285,177 +282,182 @@ td > a {
   border-bottom: #5865f2 1px dotted;
 }
 
-td > a:hover{
+td > a:hover {
   border-bottom: #a4f479 1px solid;
 }
 
-
 /* ESTILOS DEL FORMULARIO */
-
 form {
-    width: 50vw;
-    margin: auto;
+  width: 50vw;
+  margin: auto;
 }
 
 fieldset {
-    border: none;
-    border-radius: 0.2rem;
-    margin-bottom: 1rem;
-    background-color: #5865f230;
+  border: none;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  background-color: #5865f230;
 }
 
-form > fieldset:first-of-type, form > fieldset:nth-of-type(4), form > fieldset:last-of-type {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding-bottom: 2rem;
+form > fieldset:first-of-type,
+form > fieldset:nth-of-type(4),
+form > fieldset:last-of-type {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 
 form > fieldset:first-of-type > p {
-    width: 22vw;
-    margin-right: 0;
-    margin-left: 0.7rem;
+  width: 22vw;
+  margin-right: 0;
+  margin-left: 0.7rem;
 }
 
-label[for="cardNumber"] + input{
-    width: 25vw;
-    margin-right: 0.2vw;
+label[for="cardNumber"] + input {
+  width: 25vw;
+  margin-right: 0.2vw;
 }
 
 label[for="cardDate"] + input {
-    width: 11vw;
-    margin-right: 0.4vw;
+  width: 11vw;
+  margin-right: 0.4vw;
 }
 
 label[for="cvc"] + input {
-    width: 11vw;
+  width: 11vw;
 }
 
 label[for="address"] + input {
-    width: 47.5vw;
+  width: 47.5vw;
 }
 
-label[for="city"] + input, label[for="zip"] + input, label[for="country"] + select {
-    width: 15vw;
-    margin-right: 0.5vw;
+label[for="city"] + input,
+label[for="zip"] + input,
+label[for="country"] + select {
+  width: 15vw;
+  margin-right: 0.5vw;
 }
 
 form > fieldset:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 legend {
-    font-weight: 400;
+  font-weight: 400;
 }
 
-p > input, p > select{
-    box-sizing: border-box;
-    height: 2rem;
-    border: 0.07rem solid lightgray;
-    border-radius: 0.2rem;
-    font-size: 0.8rem;
-    font-weight: 300;
+p > input,
+p > select {
+  box-sizing: border-box;
+  height: 2rem;
+  border: 0.07rem solid lightgray;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 fieldset > p {
-    font-size: 0.8rem;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .entrada {
-    font-weight: 300;
+  font-weight: 300;
 }
 
-::placeholder, input[type="date"], p > select {
-    padding-left: 0.5rem;
+::placeholder,
+input[type="date"],
+p > select {
+  padding-left: 0.5rem;
 }
 
 legend + ul {
-    padding-left: 0;
-    margin-bottom: 2rem;
+  padding-left: 0;
+  margin-bottom: 2rem;
 }
 
 fieldset > ul > li {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
 }
 
 input[type="radio"] {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
-
 
 *[aria-label="required"] {
-    color: red;
+  color: red;
 }
 
-:required:invalid {
-    border: 1px solid red;
+:required:user-invalid {
+  border: 1px solid red;
 }
 
-:required:valid {
-    border: 1px solid green;
+:required:user-valid {
+  border: 1px solid green;
 }
 
 legend + ul li {
-    list-style: none;
-    font-weight: 400;
-  }
-
-p > label {
-    padding-bottom: 0.3rem;
+  list-style: none;
+  font-weight: 400;
 }
 
-label[for="comments"]{
-    font-size: 0.8rem;
-    font-weight: 400;
+p > label {
+  padding-bottom: 0.3rem;
+}
+
+label[for="comments"] {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 textarea {
-    box-sizing: border-box;
-    width: 50vw;
-    height: 4rem;
-    border: 0.07rem solid lightgray;
-    margin-top: 0.4rem;
-    border-radius: 0.2rem;
-    font-size: 0.8rem;
-    font-weight: 300;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 4rem;
+  border: 0.07rem solid lightgray;
+  margin-top: 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 form > p:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-label[for="terms"]{
-    font-size: 0.8rem;
-    font-weight: 400;
+label[for="terms"] {
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-input + a, input ~ a {
-    color: #5865f2;
-    border-bottom: #5865f2 1px dotted;
+input + a,
+input ~ a {
+  color: #5865f2;
+  border-bottom: #5865f2 1px dotted;
 }
 
-input + a:hover, input ~ a:hover{
-    border-bottom: #a4f479 1px solid;
+input + a:hover,
+input ~ a:hover {
+  border-bottom: #a4f479 1px solid;
 }
 
 button {
-    background-color: #5865f2;
-    color: white;
-    border: none;
-    border-radius: 0.2rem;
-    padding: 0.7rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    width: 50vw;
+  background-color: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.7rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  width: 50vw;
 }
 
 button:hover {
-    background-color: #070e58;
+  background-color: #070e58;
 }
-
