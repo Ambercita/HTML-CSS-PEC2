@@ -304,15 +304,43 @@ fieldset {
     background-color: #5865f230;
 }
 
-form > fieldset:first-of-type {
+form > fieldset:first-of-type, form > fieldset:nth-of-type(4), form > fieldset:last-of-type {
     display: inline-flex;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 form > fieldset:first-of-type > p {
-    width: 23vw;
+    width: 22vw;
     margin-right: 0;
-    margin-left: 1rem;
+    margin-left: 0.7rem;
+}
+
+label[for="cardNumber"] + input{
+    width: 25vw;
+    margin-right: 0.2vw;
+}
+
+label[for="cardDate"] + input {
+    width: 11vw;
+    margin-right: 0.4vw;
+}
+
+label[for="cvc"] + input {
+    width: 11vw;
+}
+
+label[for="address"] + input {
+    width: 47.5vw;
+}
+
+label[for="city"] + input, label[for="zip"] + input, label[for="country"] + select {
+    width: 15vw;
+    margin-right: 0.5vw;
+}
+
+form > fieldset:last-of-type {
+    margin-bottom: 0;
 }
 
 legend {
@@ -346,6 +374,7 @@ fieldset > p {
 
 legend + ul {
     padding-left: 0;
+    margin-bottom: 2rem;
 }
 
 fieldset > ul > li {
@@ -396,6 +425,10 @@ textarea {
     font-weight: 300;
 }
 
+form > p:last-of-type {
+    margin-bottom: 0;
+}
+
 label[for="terms"]{
     font-size: 0.8rem;
     font-weight: 400;
@@ -425,3 +458,4 @@ button {
 button:hover {
     background-color: #070e58;
 }
+
