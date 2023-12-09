@@ -304,6 +304,16 @@ fieldset {
     background-color: #5865f230;
 }
 
+form > fieldset:first-of-type {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+form > fieldset:first-of-type > p {
+    width: 23vw;
+    margin-right: 0;
+    margin-left: 1rem;
+}
 
 legend {
     font-weight: 400;
@@ -324,6 +334,10 @@ fieldset > p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.entrada {
+    font-weight: 300;
 }
 
 ::placeholder, input[type="date"], p > select {
@@ -401,9 +415,13 @@ button {
     color: white;
     border: none;
     border-radius: 0.2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1rem;
     font-size: 0.8rem;
     font-weight: 600;
     margin-top: 2rem;
     width: 50vw;
+}
+
+button:hover {
+    background-color: #070e58;
 }
