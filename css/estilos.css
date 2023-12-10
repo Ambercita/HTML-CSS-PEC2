@@ -51,15 +51,6 @@ body.home {
   height: auto;
 }
 
-.home h1 {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 3rem;
-  width: 60vw;
-  margin: 2rem auto;
-  text-align: center;
-  text-shadow: 1px 2px 1px #4b4b4b9f;
-}
-
 .home nav {
   display: flex;
   justify-content: center;
@@ -85,6 +76,15 @@ body.home {
 
 .home .block li {
   display: block;
+}
+
+.home h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3rem;
+  width: 60vw;
+  margin: 2rem auto;
+  text-align: center;
+  text-shadow: 1px 2px 1px #4b4b4b9f;
 }
 
 .home .enlaces-legales {
