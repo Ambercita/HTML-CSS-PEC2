@@ -223,20 +223,20 @@ dd {
   padding: 1.5rem 0 1.5rem 4rem;
 }
 
-.content footer p {
+.content footer p:has(a) {
   display: inline-flex;
   margin-top: 0.5rem;
-  margin-left: 1rem;
   margin-bottom: 0.1rem;
 }
 
-.copyright {
-  display: block !important;
+.content footer p {
+  clear: both;
+  margin-left: 1rem;
   font-size: 0.8rem;
 }
 
 .container {
-  margin-left: 10vw;
+  margin-left: 11vw;
 }
 
 table {
